@@ -1,3 +1,6 @@
+/* In survey.js */
+/* This is the isolated section */
+
 let kiki = document.getElementById("Kiki");
 let bouba = document.getElementById("Bouba");
 let ksvg = document.getElementById("ksvg");

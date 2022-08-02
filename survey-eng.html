@@ -13,7 +13,7 @@
   <body>
     <header>
         <nav>
-            <a class="navbtn" href="./index.html"><h2>&#127968;</h2></a>
+            <a class="navbtn" href="./index-eng.html"><h2>&#127968;</h2></a>
             <a class="navbtn" id="infobtn"><h2>&#10068;</h2></a>
         </nav>
     </header>
@@ -34,14 +34,15 @@
             <div id="canvas">
 
                 <div class="page"> <!-- FORM PAGE -->
-                    <p>Please fill in the first page on the Google Forms</p>
+                    <h2>Please fill in the first page on the Google Forms.</h2>
+                    <h2>After you have completed the first section, please press the button below.</h2>
                     <input type="button" class="btn" value="Next page →" onclick="nextPage(1)">
                 </div>
 
 
                 <div class="page">
                     <h2 id="audio-title">音１</h2>
-                    <h3>以下のボタンを押すと一番似合っている形を選んでください</h3>
+                    <h3>Press "play sound" and choose the shape you believe to be most fitting</h3>
                     <input type="button" id="playbtn" class="btn" value="Play sound">
                     <svg xmlns="http://www.w3.org/2000/svg" class="shape" id="ksvg" width="220px" height="220px" viewBox="0 0 520 520">
                         <path id="Kiki" d="M 412.00,2.00
@@ -172,6 +173,7 @@
                     </svg>
                     <h3 id="txt"></h3>
                     <input type="button" class="btn" id="nextbtn" onclick="nextTab(1)">
+                    <p>※ Please adjust your volume to a comfortable listening volume</p>
                 </div>
 
                 <div class="page">
@@ -185,6 +187,6 @@
 	<!-- <script src="./js/audiocontroller.js"></script> -->
     <script src="./js/showinfo.js"></script>
     <!-- <script src="./js/chooseshape.js"></script> -->
-    <script src="./js/survey-eng.js"></script>
+    <script src="./js/survey.js"></script>
   </body>
 </html>

@@ -1,6 +1,5 @@
-
 /* Setup */
-const audioList = ['sound1', 'sound2', 'sound3', 'sound4'];
+const audioList = ['sound1', 'sound2', 'sound3', 'sound4', 'sound5', 'sound6', 'sound7', 'sound8', 'sound9', 'sound10'];
 let title = document.getElementById('audio-title');
 let playbtn = document.getElementById('playbtn');
 let nextbtn = document.getElementById('nextbtn');
@@ -120,9 +119,9 @@ function select(ev) {
     }
 
     if(document.documentElement.lang === "ja") {
-        txt.innerText = `Google Forms ${currentTab+1} 番目の質問で「${shape.id}」を選んでください`;
+        txt.innerText = `Google Forms ${currentTab+1} 番目の質問で「${shape.id}」を選択してください、と準備ができたら次のページへ`;
     }else {
-        txt.innerText = `Please select "${shape.id}" on question nr.${currentTab+1} in the Google Forms`;
+        txt.innerText = `Please select "${shape.id}" on question nr.${currentTab+1} in the Google Forms and go to the next page when you're ready`;
     }
 }
 
