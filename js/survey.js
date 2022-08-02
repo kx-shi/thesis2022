@@ -17,6 +17,9 @@ var pages = document.getElementsByClassName("page");
 var currentPage = 0; // Current page
 var currentTab = 0; // Current tab
 
+// Audio-stuff
+let audioUrl = require('../audio/');
+
 // Results
 var result = [];
 var formres = []; // gender, age, hearinglevell, hearinglevelr, hearingaidl, hearingaidr
@@ -130,6 +133,6 @@ function handler() {
 }
 
 function play(n) {
-    const audio = new Audio(`https://github.com/kx-shi/thesis2022/blob/main/audio/${audioList[n]}.wav`);
+    const audio = new Audio(`${audioUrl}${audioList[n]}.wav`);
     audio.play();
 };
