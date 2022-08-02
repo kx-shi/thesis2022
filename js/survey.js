@@ -130,7 +130,6 @@ function handler() {
 }
 
 function play(n) {
-    console.log(`audio: ${n}`);
-    const audio = new Audio(`../audio/${audioList[n]}.wav`);
+    const audio = new Audio(`https://github.com/kx-shi/thesis2022/blob/main/audio/${audioList[n]}.wav`);
     audio.play();
 };
