@@ -18,7 +18,28 @@ var currentPage = 0; // Current page
 var currentTab = 0; // Current tab
 
 // Audio-stuff
-let audioUrl = require('../audio/');
+audio1 = require('../audio/sound1.wav');
+audio2 = require('../audio/sound2.wav');
+audio3 = require('../audio/sound3.wav');
+audio4 = require('../audio/sound4.wav');
+audio5 = require('../audio/sound5.wav');
+audio6 = require('../audio/sound6.wav');
+audio7 = require('../audio/sound7.wav');
+audio8 = require('../audio/sound8.wav');
+audio9 = require('../audio/sound9.wav');
+audio10 = require('../audio/sound10.wav');
+
+var hash = new Object();
+hash['sound1'] = audio1;
+hash['sound2'] = audio2;
+hash['sound3'] = audio3;
+hash['sound4'] = audio4;
+hash['sound5'] = audio5;
+hash['sound6'] = audio6;
+hash['sound7'] = audio7;
+hash['sound8'] = audio8;
+hash['sound9'] = audio9;
+hash['sound10'] = audio10;
 
 // Results
 var result = [];
@@ -133,6 +154,6 @@ function handler() {
 }
 
 function play(n) {
-    const audio = new Audio(`${audioUrl}${audioList[n]}.wav`);
+    const audio = new Audio(`${hash[audioList[n]]}`);
     audio.play();
 };
