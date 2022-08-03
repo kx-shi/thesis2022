@@ -21,10 +21,10 @@
         <div id="custom-modal" class="modal">
             <div class="modal-content">
                 <span class="close">&times;</span>
-                <h2><i>Instructions</i></h2>
-                <p>１．<i>Press the "Play sound" button and listen to the audio</i></p>
-                <p>２．<i>Select the shape you think best suits the sound</i></p>
-                <p>３．<i>Fill in the corresponding shape to the corresponding question nr. in the Google Forms</i></p>
+                <h2>指示</h2>
+                <p>１．「音をだす！」ボタンを押して音声を聞く</p>
+                <p>２．音を聞いて音に合った形を選択してください</p>
+                <p>３．Google フォームで対応する質問番号に対応する形状を記入してください。</p>
             </div>
         </div>
     </div>
@@ -34,26 +34,26 @@
             <div id="canvas">
 
                 <div class="page"> <!-- FORM PAGE -->
-                    <h2><i>Please fill in Part 1 on the Google Forms.</i></h2>
-                    <h2><i>After you have completed Part 1, please press the button below.</i></h2>
+                    <h2>部分 1 を Google フォームに入力してください。</h2>
+                    <h2>部分 1 を完了したら、下のボタンを押してください。</h2>
                     <input type="button" class="btn" value="次のページ →" onclick="nextPage(1)">
                 </div>
 
 
                 <div class="page">
-                    <h2 id="audio-title">音１</h2>
-                    <h3>以下のボタンを押すと一番似合っている形を選んでください</h3>
+                    <h2 id="audio-title"></h2>
+                    <h3>音を聞いてイメージできる図形は以下２つのどちらですか？</h3>
                     <input type="button" id="playbtn" class="btn" value="音を出す！">
                     <div id="images"></div>
                     <h3 id="txt"></h3>
                     <input type="button" class="btn" id="nextbtn" onclick="nextTab(1)">
                     <div class="space"></div>
-                    <p><i>※ Please adjust your volume to a comfortable listening volume</i></p>
+                    <p>※ 音量は聞き取りやすい音量に調整してください</p>
                 </div>
 
                 <div class="page">
-                    <h2><i>Thank you for participating!</i></h2>
-                    <h2><i>You can now close this window.</i></h2>
+                    <h2>ご参加いただきありがとうございます！</h2>
+                    <h2>このウィンドウを閉じることができます。</h2>
                 </div>
 
             </div>

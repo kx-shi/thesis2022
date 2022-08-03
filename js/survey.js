@@ -164,7 +164,7 @@ function select(ev) {
     }
 
     if(document.documentElement.lang === "ja") {
-        txt.innerHTML = `<i>Please select <b>"${shape.id}"</b> on <b>question nr.${currentTab+1}</b> in the Google Forms and go to the next page when you're ready</i>`;
+        txt.innerHTML = `Google フォームの<b>質問 ${currentTab+1}</b> で「<b>"${shape.id}"</b>」を選択し、準備ができたら次のページに進んでください。`;
     }else {
         txt.innerHTML = `Please select <b>"${shape.id}"</b> on <b>question nr.${currentTab+1}</b> in the Google Forms and go to the next page when you're ready`;
     }
