@@ -3,6 +3,7 @@ const audioList = ['sound1', 'sound2', 'sound3', 'sound4', 'sound5', 'sound6', '
 let title = document.getElementById('audio-title');
 let playbtn = document.getElementById('playbtn');
 let nextbtn = document.getElementById('nextbtn');
+let skipbtn = document.getElementById('skipbtn');
 let canvas = document.getElementById("images"); // div where kiki and bouba is located
 let txt = document.getElementById("txt");
 let selected = null;
@@ -95,25 +96,41 @@ function changeTab(n) {
     // change sound played
     playbtn.addEventListener("click", handler, false);
 
+    if(document.documentElement.lang === "ja") {
+        nextbtn.value = "選択を確認 / 次のページ →";
+        skipbtn.value = "聞こえない / スキップ →";
+    }else {
+        nextbtn.value = "Confirm choice / Next page →"
+        skipbtn.value = "Inaudible/Skip →"
+    }
+
+    /** Display different text depending on last page or not (obsolete)
     if (currentTab >= (audioList.length - 1)) {
         if(document.documentElement.lang === "ja") {
-            nextbtn.value = "終了する"; // if the last tab
+            nextbtn.value = "次のページ （終了する） →"; // if the last tab
+            
         }else {
             nextbtn.value = "Finish"
         }
+        skipbtn.remove(); // remove skip-button at the final page
 
     } else {
         if(document.documentElement.lang === "ja") {
             nextbtn.value = "次のページ →";
+            skipbtn.value = "聞こえない / スキップ →";
         }else {
             nextbtn.value = "Next page →"
+            skipbtn.value = "Inaudible/Skip →"
         }
     }
+     */
 }
 
-function nextTab(n) { // Go to next tab  
+function nextTab(n, checkValidation) { // Go to next tab  
     // If any validation fails, do not go on
-    if(!validateShape()) return false;
+    if(checkValidation) {
+        if(!validateShape()) return false;
+    }
     
     result[currentTab] = selected;
     //console.log(`registered result[${currentTab}]: ${selected}`);

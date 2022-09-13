@@ -25,6 +25,9 @@
                 <p>１．「音をだす！」ボタンを押して音声を聞く</p>
                 <p>２．音を聞いて音に合った形を選択してください</p>
                 <p>３．Google フォームで対応する質問番号に対応する形状を記入してください。</p>
+                <br/>
+                <p>※ 音量は聞き取りやすい音量に調整してください</p>
+                <p>※ 何度でも音を聞くことができます</p>
             </div>
         </div>
     </div>
@@ -41,14 +44,16 @@
 
 
                 <div class="page">
+                    <p>※ 音量は聞き取りやすい音量に調整してください</p>
+                    <p>※ 何度でも音を聞くことができます</p>
                     <h2 id="audio-title"></h2>
                     <h3>音を聞いてイメージできる図形は以下２つのどちらですか？</h3>
                     <input type="button" id="playbtn" class="btn" value="音を出す！">
                     <div id="images"></div>
                     <h3 id="txt"></h3>
-                    <input type="button" class="btn" id="nextbtn" onclick="nextTab(1)">
+                    <input type="button" class="btn" id="skipbtn" onclick="nextTab(1, false)">
+                    <input type="button" class="btn" id="nextbtn" onclick="nextTab(1, true)">
                     <div class="space"></div>
-                    <p>※ 音量は聞き取りやすい音量に調整してください</p>
                 </div>
 
                 <div class="page">

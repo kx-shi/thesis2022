@@ -100,8 +100,8 @@ h3 {
 }
 
 .btn {
-    display: block;
-    margin: auto;
+    display: inline;
+    margin: auto 2em;
     padding: 1em 3em;
     background: black;
     color: white;

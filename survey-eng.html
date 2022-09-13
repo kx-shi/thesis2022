@@ -25,6 +25,9 @@
                 <p>1. Press the "Play sound" button and listen to the audio</p>
                 <p>2. Select the shape you think best suits the sound</p>
                 <p>3. Fill in the corresponding shape to the corresponding question nr. in the Google Forms</p>
+                <br />
+                <p>※ Please adjust your volume to a comfortable listening volume</p>
+                <p>※ You can listen to the sound as many times as you'd like</p>
             </div>
         </div>
     </div>
@@ -41,15 +44,17 @@
 
 
                 <div class="page">
+                    <p>※ Please adjust your volume to a comfortable listening volume</p>
+                    <p>※ You can listen to the sound as many times as you'd like</p>
                     <h2 id="audio-title">音１</h2>
                     <h3>Press "play sound" and choose the shape you perceive to be most fitting</h3>
                     <input type="button" id="playbtn" class="btn" value="Play sound">
                     <div id="images">
                     </div>
                     <h3 id="txt"></h3>
-                    <input type="button" class="btn" id="nextbtn" onclick="nextTab(1)">
+                    <input type="button" class="btn inline" id="skipbtn" onclick="nextTab(1, false)">
+                    <input type="button" class="btn inline" id="nextbtn" onclick="nextTab(1, true)">
                     <div class="space"></div>
-                    <p>※ Please adjust your volume to a comfortable listening volume</p>
                 </div>
 
                 <div class="page">
