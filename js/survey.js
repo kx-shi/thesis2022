@@ -98,10 +98,10 @@ function changeTab(n) {
 
     if(document.documentElement.lang === "ja") {
         nextbtn.value = "選択を確認 / 次のページ →";
-        skipbtn.value = "聞こえない / スキップ →";
+        skipbtn.value = "聴こえない →";
     }else {
         nextbtn.value = "Confirm choice / Next page →"
-        skipbtn.value = "Inaudible/Skip →"
+        skipbtn.value = "Inaudible →"
     }
 
     /** Display different text depending on last page or not (obsolete)
