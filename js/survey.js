@@ -97,7 +97,7 @@ function changeTab(n) {
     playbtn.addEventListener("click", handler, false);
 
     if(document.documentElement.lang === "ja") {
-        nextbtn.value = "選択を確認 / 次のページ →";
+        nextbtn.value = "選択を確認 →";
         skipbtn.value = "聴こえない →";
     }else {
         nextbtn.value = "Confirm choice / Next page →"
