@@ -12,8 +12,8 @@ The survey website is intended to be used together with a Google Forms, and non-
 | 5       | MSM 1-1         | 3              |
 | 6       | MSM 2-1 (msm3)  | 4              |
 | 7       | MSM 4-3         | 5              |
-| 8       | Conversation 1  | 5              |
-| 9       | Conversation 2  | 4              |
+| 8       | Conv 1 (male)   | 5              |
+| 9       | Conv 2 (female) | 4              |
 | 10      | Door 1          | 5              |
 
 ## Selection
